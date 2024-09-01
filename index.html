@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 1045px) {
+            .city {
+                margin: auto;
+            }
+
+            .today-weather {
+                justify-content: space-between;
+            }
+        }
+
+        @media only screen and (max-width: 735px) {
+            .forecast {
+                flex-direction: column;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (max-width: 1449px) {}
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Fact-Regular;
+            margin-top: 0px;
+            background-color: #e4f2fd;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            background-color: #5672f1;
+            margin-top: 0px;
+            padding-top: 0.1px;
+            padding-bottom: 0.1px;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .city {
+            position: relative;
+        }
+
+        .city p {
+            font-size: 20px;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+
+        .city input {
+            padding: 15px 20px;
+            width: 280px;
+            margin-left: 60px;
+        }
+
+        .city button {
+            background-color: #5672f1;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            width: 280px;
+            cursor: pointer;
+            margin-left: 60px;
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+
+        .city button:hover {
+            background-color: #4358b6;
+        }
+
+        .city button:active {
+            background-color: #394c9d;
+        }
+
+        .city .or {
+            position: absolute;
+            text-align: center;
+            margin-left: 184px;
+        }
+
+        .city .location {
+            background-color: #6c757e;
+            border-radius: 8px;
+        }
+
+        .city .location:hover {
+            background-color: #4c5258;
+        }
+
+        .city .location:active {
+            background-color: #2f3236;
+        }
+
+        .today-weather {
+            border-radius: 8px;
+            background-color: #5672f1;
+            color: white;
+            display: flexbox;
+        }
+
+        .today-weather h2 {
+            margin-left: 60px;
+        }
+
+        .today-weather p {
+            margin-left: 60px;
+        }
+
+        .today-weather img {
+            width: 123px;
+            height: 123px;
+            margin-left: 460px;
+            margin-top: -900px;
+            margin-right: 20px;
+        }
+
+        .today-weather .rain {
+            margin-left: 460px;
+        }
+
+        .card1,
+        .card2,
+        .card3,
+        .card4 {
+            background-color: #6c757e;
+            width: 160px;
+        }
+
+        .card1 h4,
+        img,
+        p {
+            margin-left: 20px;
+        }
+
+        .card2 h4,
+        img,
+        p {
+            margin-left: 20px;
+        }
+
+        .card3 h4,
+        img,
+        p {
+            margin-left: 20px;
+        }
+
+        .card4 h4,
+        img,
+        p {
+            margin-left: 20px;
+        }
+
+        .card12,
+        .card34 {
+            display: flex;
+        }
+
+        .forecast img {
+            width: 50px;
+            height: 50px;
+        }
+        .forecast{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Weather Dashboard</h2>
+    </header>
+    <div class="container">
+        <div class="city">
+            <p><b>Enter a City Name</b></p>
+            <input type="text" placeholder="Eg., New York, London, Tokyo">
+            <br>
+            <br>
+            <button class="search">Search</button>
+            <p class="or">OR</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="location">Use Current Location</button>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="weather">
+            <br>
+            <div class="today-weather">
+                &nbsp;
+                <h2>London (2023-06-19)</h2>
+                <p>Temperature: 18.71°C</p>
+                <p>Wind: 4.31 M/S</p>
+                <p>Humidity: 76%</p>
+                <img src="img/4089338.png" alt="">
+                <p class="rain">Moderate Rain</p>
+            </div>
+            <h2>4-Day Forecast</h2>
+                <div class="forecast">
+                    <div class="card1">
+                        <br>
+                        <h4>(2023-06-20)</h4>
+                        <img src="img/clear-sky.png" alt="">
+                        <p>Temp: 17.64°C</p>
+                        <p>Wind: 0.73 M/S</p>
+                        <p>Humidity: 70%</p>
+                        <br>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="card2">
+                        <br>
+                        <h4>(2023-06-21)</h4>
+                        <img src="img/sunny.png" alt="">
+                        <p>Temp: 16.78°C</p>
+                        <p>Wind: 2.72 M/S</p>
+                        <p>Humidity: 83%</p>
+                        <br>
+                    </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="card3">
+                    <br>
+                    <h4>(2023-06-22)</h4>
+                    <img src="img/storm.png" alt="">
+                    <p>Temp: 18.20°C</p>
+                    <p>Wind: 1.49 M/S</p>
+                    <p>Humidity: 72%</p>
+                    <br>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="card4">
+                    <br>
+                    <h4>(2023-06-23)</h4>
+                    <img src="img/haze.png" alt="">
+                    <p>Temp: 17.08°C</p>
+                    <p>Wind: 0.9 M/S</p>
+                    <p>Humidity: 89%</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
